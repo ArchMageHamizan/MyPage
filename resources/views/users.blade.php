@@ -1,0 +1,1 @@
+<!-- normal way to fetch data from table -->
