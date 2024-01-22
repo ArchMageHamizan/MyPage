@@ -9,18 +9,22 @@
     <body>
         <div class="container">
             <section class="one">
+                <h1>🏫</h1>
                 <h1>SPM</h1>
             </section>
-        </div>
-        <section class="two">
-                <h1>Matrikulas</h1>
+            <section class="two">
+                <h1>🏫</h1>
+                <h1>Matrikulasi</h1>
             </section>
             <section class="three">
+                <h1>🏫</h1>
                 <h1>Universiti</h1>
             </section>
             <section class="four">
+                <h1>🏫</h1>
                 <h1>Projek</h1>
             </section>
+        </div>
     </body>
 </html>
 

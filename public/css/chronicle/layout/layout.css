@@ -6,6 +6,38 @@
     box-sizing: border-box;
     font-family: "Poppins",sans-serif;
 }
-body{
-    border: 10px solid rgb(72, 7, 126);
+
+.container{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+section{
+  height:100vh;
+  display: flex;
+  font-size: 60px;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  scroll-snap-align: start;
+}
+
+h1{
+    color: azure;
+    text-shadow: 1px 1px 4px #000;
+    
+}
+
+.one{
+    background: linear-gradient(180deg,crimson,#9553ff);
+}
+.two{
+    background: linear-gradient(180deg,#9553ff,rgb(95, 250, 255));
+}
+.three{
+    background:linear-gradient(180deg,rgb(95, 250, 255),rgba(231, 171, 93, 0.925));
+}
+.four{
+    background:linear-gradient(180deg,rgba(231, 171, 93, 0.925),rgba(185, 157, 216, 0.945));
 }

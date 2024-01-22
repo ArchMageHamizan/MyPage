@@ -7,6 +7,7 @@ use App\Http\Controllers\donateController; // import laravel controller from the
 use App\Http\Controllers\LoginController;// import laravel controller from the directory file
 use App\Http\Controllers\UsersController;// import laravel controller from the directory file
 use App\Http\Controllers\MemberController;// import laravel controller from the directory file
+use App\Http\Controllers\BanController;// import laravel controller from the directory file
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -103,4 +104,8 @@ Route::get("users",[UsersController::class,'userData']);
 
 // Controller file for : MemberController.php============
 Route::get("members",[MemberController::class,'getData']);
-//===============================================
+//=======================================================
+
+// Controller file for : BanController.php============
+Route::get("ban",[BanController::class,'displayBan']);
+//=======================================================

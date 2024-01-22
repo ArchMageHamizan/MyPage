@@ -10,6 +10,8 @@
     <li><a href="/login">Login</a></li>
     <li><a href="/patrion">Patrion Member</a></li>
     <li><a href="/users">Data</a></li>
+    <li><a href="/ban">Banlist</a></li>
+
 </ol>
 <!-- <form action="{{URL::to('/donate')}}" method="post">
     <input type="text"/>
