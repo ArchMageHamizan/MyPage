@@ -2,9 +2,9 @@
 <!-- action attribute tell where the form data will be sent when the form is submitted. -->
 <div class="container">
     <div class="form">
-        <form  action="login" method="POST">
+        <form  action="logins" method="POST">
         <!-- token will used to avoid cross out request? -->
-        @csrf
+            @csrf
             <input type="text" name="username" placeholder="Enter username"/>
             <span>@error('username'){{$message}}@enderror</span>
             <br/>            

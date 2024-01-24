@@ -6,39 +6,89 @@
     
 }  
 
+
 body{
     margin:5px;
     padding:2px;
     font-size: 2px;
     font-family: "Poppins", sans-serif;
-    height: 100vh;
+    height:100vh;
     display: grid;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
     background:linear-gradient(360deg,crimson,orange);
+   
 }
 
 table{ 
-    border-radius: 10px;
+    border-radius: 30px;
     border-collapse: collapse;
     background-color: antiquewhite;
-    border-collapse: collapse;
     text-align: left;
-    overflow: hidden;
-    box-shadow: 0px 5px 10px 0px #aaa6a6;
+    overflow: hidden;    
+    box-shadow: 0px 5px 10px 0px #333333;
 }
 th{
-  padding: 1rem 2rem ;
+  /* padding: 1rem 2rem ; */
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.1rem;
 }
 td{
-    padding: 2px 5px;
+    /* padding: 2px 5px; */
     text-align: center;
     letter-spacing: 0.1rem;
   }
 
- table tr:last-child td {
-    margin-bottom: 20px;
+  thead tr{
+    background-color: rgba(255, 68, 0, 0.315);
+  }
+  thead th{
+    color: aliceblue;
+  }
+table th, table td{
+  padding: 1rem ;
+}
+
+  tbody tr:nth-child(even){
+    background-color: #e6e0e0b6;
+  }
+
+.image img{
+     height: 50%;
+     width: 50%;
+     border-radius: 50%;
+     border: 2px solid #ffff;
+   }
+@media(max-width:560px){
+  body{
+    height: 240vh;
+    overflow: scroll;
+    
+  }
+  table{
+    border-radius: 10px;
+    padding: 15px;
+
+  }
+  table thead tr{
+    display: none;
+  }
+  table tr{
+    display: block;
+  }
+  table th,table td{
+    padding: .5em;
+  }
+  table td{
+    text-align: left;
+    display: block;
+  }
+  table td::before{
+    content: attr(data-title) ":" ;
+    float: left;
+    font-family: "Poppins", bold;
+    color: #c73636;
+  }
 }
