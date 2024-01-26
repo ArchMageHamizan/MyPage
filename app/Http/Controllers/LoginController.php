@@ -14,7 +14,7 @@ class LoginController extends Controller
 
         $data=$req->input();
         $req->session()->put('username',$data['username']);
-        echo session('username');
+        return redirect('about');
     }
 }
  
