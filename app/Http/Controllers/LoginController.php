@@ -11,7 +11,10 @@ class LoginController extends Controller
             'username'=>'required | min:5' ,
             'password'=>'required | min:5' 
     ]);// Take array as parameter
-        return $req->input();
+
+        $data=$req->input();
+        $req->session()->put('username',$data['username']);
+        echo session('username');
     }
 }
  

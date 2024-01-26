@@ -65,7 +65,7 @@ Route::view("home",'home');
 //========================================================
 
 // Conroller file for : POST       LoginController.php===========
-        Route::POST("logins",[LoginController::class,'getData']);
+        Route::POST("userLogin",[LoginController::class,'getData']);
 //========================================================
 
 // Conroller file for : LoginController.php============
