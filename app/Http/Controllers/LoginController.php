@@ -13,7 +13,7 @@ class LoginController extends Controller
     ]);// Take array as parameter
 
         $data=$req->input();
-        $req->session()->put('username',$data['username']);
+        $req->session()->put('user',$data['username']);//1. put the data into specific key 2.we stored the key data into session
         return redirect('about');
     }
 }
