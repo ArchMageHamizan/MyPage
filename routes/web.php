@@ -8,6 +8,7 @@ use App\Http\Controllers\LoginController;// import laravel controller from the d
 use App\Http\Controllers\UsersController;// import laravel controller from the directory file
 use App\Http\Controllers\MemberController;// import laravel controller from the directory file
 use App\Http\Controllers\BanController;// import laravel controller from the directory file
+use App\Http\Controllers\AboutController;// import laravel controller from the directory file
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -126,4 +127,8 @@ Route::get("/login",function(){
         }
         return view('login');
 });
+//=======================================================
+
+// Controller file for : AboutController.php============
+Route::post("addComplain",[AboutController::class,'addComplain']);
 //=======================================================
