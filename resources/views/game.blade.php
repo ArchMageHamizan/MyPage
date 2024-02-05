@@ -4,8 +4,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>Ban List</title>
-        <link rel="stylesheet" href="{{asset('css/ban/layout/layout.css')}}">
+        <!-- <link rel="stylesheet" href="{{asset('css/game/layout/layout.css')}}"> -->
     </head>
+    <style>
+        .w-5{display:none;}
+    </style>
     <body>
             <!-- <h1>Ban List</h1> -->
             <div class="container">
@@ -32,6 +35,9 @@
                             @endforeach
                         </tbody>
                     </table>
+                    <div>
+                        {{$gameList->links()}}
+                    </div>
             </div>
      </body>
 </html>
