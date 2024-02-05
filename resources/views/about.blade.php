@@ -6,7 +6,7 @@
         <title>About Me</title>
     </head>
     <body>
-         <h1>hello {{session('email')}}</h1>
+         <h1>hello {{session('user')}}</h1>
          @if(session('email'))
             <h4>email from {{session('email')}} has been submit</h4>
          @endif

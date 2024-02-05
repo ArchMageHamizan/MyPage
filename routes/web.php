@@ -9,6 +9,7 @@ use App\Http\Controllers\UsersController;// import laravel controller from the d
 use App\Http\Controllers\MemberController;// import laravel controller from the directory file
 use App\Http\Controllers\BanController;// import laravel controller from the directory file
 use App\Http\Controllers\AboutController;// import laravel controller from the directory file
+use App\Http\Controllers\GameController;// import laravel controller from the directory file
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -70,7 +71,7 @@ Route::view("home",'home');
 //========================================================
 
 // // Conroller file for : LoginController.php ==============
-//         Route::view("login",'login');
+        Route::view("login",'login');
 // //========================================================
 
 // View file for : patrion.blade.php ====================
@@ -131,4 +132,8 @@ Route::get("/login",function(){
 
 // Controller file for : AboutController.php============
 Route::post("addComplain",[AboutController::class,'addComplain']);
+//=======================================================
+
+// Controller file for : GameController.php============
+Route::get("game",[GameController::class,'displayList']);
 //=======================================================
