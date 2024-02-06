@@ -13,6 +13,7 @@
             <br/>
             <button type="submit">Login</buton>
         </form>
+        <a href='/home'>home</a>
     </di>
 </div>
 <!-- @if($errors->any())
