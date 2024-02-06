@@ -135,6 +135,11 @@ Route::get("/login",function(){
 Route::post("addComplain",[AboutController::class,'addComplain']);
 //=======================================================
 
-// Controller file for : GameController.php============
+// Controller file for : GameController.php==============
 Route::get("game",[GameController::class,'displayList']);
 //=======================================================
+
+//  View  and Controller file for : addgame.php ============
+Route::view('addGame','addgame');
+Route::post('addGame',[AddGameController::class,'addGame']);
+// ==========================================================
