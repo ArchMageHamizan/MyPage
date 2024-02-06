@@ -11,7 +11,7 @@
         box-sizing: border-box;
         margin:5px; /* Include padding and border in the element's total width */
     }
-    button,a {
+    button,a,span {
         margin:5px;
     }
     </style>
