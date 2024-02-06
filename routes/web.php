@@ -10,6 +10,7 @@ use App\Http\Controllers\MemberController;// import laravel controller from the 
 use App\Http\Controllers\BanController;// import laravel controller from the directory file
 use App\Http\Controllers\AboutController;// import laravel controller from the directory file
 use App\Http\Controllers\GameController;// import laravel controller from the directory file
+use App\Http\Controllers\AddGameController;// import laravel controller from the directory file
 /*
 |--------------------------------------------------------------------------
 | Web Routes
