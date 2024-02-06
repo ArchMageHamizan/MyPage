@@ -13,9 +13,11 @@
             <br/>
             <button type="submit">Login</buton>
         </form>
-        <a href='/home'>home</a>
+        
     </di>
+    
 </div>
+<a href='/home'>home</a>
 <!-- @if($errors->any())
     @foreach($errors->all() as $err)
         <li>{{$err}}</li>
@@ -32,6 +34,7 @@
     }
     .container{
         display: flex;
+        flex-direction:column;
         justify-content: center;
         align-items: center;
         height: 80vh;
