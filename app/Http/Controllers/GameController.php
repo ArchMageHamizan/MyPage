@@ -11,7 +11,7 @@ class GameController extends Controller
         return view('game',['gameList'=>$data]);
     }
     function deleteData($id){
-        $data=Game::find();
+        $data=Game::find($id);
         $data->delete();
         return redirect('game');
     }
