@@ -137,6 +137,7 @@ Route::post("addComplain",[AboutController::class,'addComplain']);
 
 // Controller file for : GameController.php==============
 Route::get("game",[GameController::class,'displayList']);
+Route::get("delete/{id}",[GameController::class,'deleteData']);
 //=======================================================
 
 //  View  and Controller file for : addgame.php ============

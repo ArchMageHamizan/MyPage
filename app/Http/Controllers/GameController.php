@@ -10,4 +10,9 @@ class GameController extends Controller
         $data=Game::paginate(4);
         return view('game',['gameList'=>$data]);
     }
+    function deleteData($id){
+        $data=Game::find();
+        $data->delete();
+        return redirect('game');
+    }
 }

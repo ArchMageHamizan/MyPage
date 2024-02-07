@@ -20,6 +20,7 @@
                                 <th>RELEASED</th>
                                 <th>STAR</th>
                                 <th>CATEGORY</th>
+                                <th>ACTION</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -30,6 +31,9 @@
                                 <td data-title="RELEASED">{{$game['date']}}</td>
                                 <td data-title="STAR">{{$game['star']}}</td>
                                 <td data-title="CATEGORY_ID">{{$game['category_id']}}</td>
+                                <td >
+                                    <a href="{{'delete/'.$game['id']}}">Delete</a>
+                                </td>
                             
                             </tr>
                             @endforeach
