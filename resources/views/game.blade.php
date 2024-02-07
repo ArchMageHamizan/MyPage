@@ -8,31 +8,48 @@
     </head>
     <style>
         .w-5{display:none;}
+       
+        table td > div,
+        table th > div {
+        margin-left: 20px;
+       }
+
+       table td{
+        text-align:center;
+       }
+       table td[data-title="ACTION"] {
+        text-align: center !important;
+        }
     </style>
     <body>
             <!-- <h1>Ban List</h1> -->
             <div class="container">
                     <table>
                         <thead>
-                            <tr>
-                                <th>ID</th>
-                                <th>GAMES</th>
-                                <th>RELEASED</th>
-                                <th>STAR</th>
-                                <th>CATEGORY</th>
-                                <th>ACTION</th>
+                            <tr>                     
+                                <th><div>NUM</div></th>
+                                <th><div>ID</div></th>
+                                <th><div>GAMES</div></th>
+                                <th><div>RELEASED</div></th>
+                                <th><div>STAR</div></th>
+                                <th><div>CATEGORY</div></th>
+                                <th><div>ACTION</div></th>
                             </tr>
                         </thead>
                         <tbody>
                             @foreach($gameList as $game)                
                             <tr>
-                                <td data-title="ID">{{$game['id']}}</td>
-                                <td data-title="GAMES">{{$game['names']}}</td>
-                                <td data-title="RELEASED">{{$game['date']}}</td>
-                                <td data-title="STAR">{{$game['star']}}</td>
-                                <td data-title="CATEGORY_ID">{{$game['category_id']}}</td>
-                                <td >
-                                    <a href="{{'delete/'.$game['id']}}">Delete</a>
+                                <td data-title="NUM"><div>{{$loop->iteration+($gameList->currentPage()-1)*$gameList->perpage()}}</div></td>
+                                <td data-title="ID"><div>{{$game['id']}}</div></td>
+                                <td data-title="GAMES"><div>{{$game['names']}}</div></td>
+                                <td data-title="RELEASED"><div>{{$game['date']}}</div></td>
+                                <td data-title="STAR"><div>{{$game['star']}}</div></td>
+                                <td data-title="CATEGORY_ID"><div>{{$game['category_id']}}</div></td>
+                                <td data-title="ACTION">
+                                    <div>
+                                        <a href="{{'delete/'.$game['id']}}">Delete</a>
+                                        <a href="{{'delete/'.$game['id']}}">Update</a>
+                                    </div>                                    
                                 </td>
                             
                             </tr>
