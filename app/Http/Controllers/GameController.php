@@ -11,8 +11,12 @@ class GameController extends Controller
         return view('game',['gameList'=>$data]);
     }
     function deleteData($id){
-        $data=Game::find($id);
+        $data=Game::find($id);//find column named 'id'
         $data->delete();
         return redirect('game');
+    }
+    function updateData($id){
+         return Game::find($id);//find column named 'id'
+         
     }
 }

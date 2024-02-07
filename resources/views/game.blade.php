@@ -19,7 +19,7 @@
        }
        table td[data-title="ACTION"] {
         text-align: center !important;
-        }
+          }
     </style>
     <body>
             <!-- <h1>Ban List</h1> -->
@@ -48,7 +48,7 @@
                                 <td data-title="ACTION">
                                     <div>
                                         <a href="{{'delete/'.$game['id']}}">Delete</a>
-                                        <a href="{{'delete/'.$game['id']}}">Update</a>
+                                        <a href="{{'update/'.$game['id']}}">Update</a>
                                     </div>                                    
                                 </td>
                             
