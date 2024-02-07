@@ -29,5 +29,5 @@ class GameController extends Controller
     function updateData($id){ //enable the fetched data being edit.
         return Game::find($id); //find column named 'id'
    }
-    //=========================================================================
+    //==========================================================================
 }
