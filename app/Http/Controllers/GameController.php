@@ -31,7 +31,13 @@ class GameController extends Controller
    //2. Any changes made at form , changes the data from table as well  
     function updateData(Request $req){ //enable the fetched data being edit.
 //         return Game::find($id); //find column named 'id'
-        return $req->input();
+        $data=Game::find($req->id);
+        $data->names=$req->names;
+        $data->star=$req->star;
+        $data->date=$req->date;
+        $data->category_id=$req->category;
+        $data->save();
+        return redirect('game');
    }
     //==========================================================================     
 }

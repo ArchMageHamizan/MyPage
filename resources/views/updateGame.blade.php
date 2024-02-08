@@ -19,13 +19,10 @@
      
          <form action="/updateGame"  method="POST">
          @csrf
-            <input type="hidden" name="id" value="{{$gameUpdateList['id']}}">
-            <input type="text" name="names" value="{{$gameUpdateList['names']}}"><br>
-            
-            <input type="text" name="date" value="{{$gameUpdateList['date']}}"><br>
-           
-            <input type="text" name="star" value="{{$gameUpdateList['star']}}"><br>
-          
+            <!-- <input type="hidden" name="id" value="{{$gameUpdateList['id']}}"> -->
+            <input type="text" name="names" value="{{$gameUpdateList['names']}}"><br>            
+            <input type="text" name="date" value="{{$gameUpdateList['date']}}"><br>           
+            <input type="text" name="star" value="{{$gameUpdateList['star']}}"><br>          
             <input type="text" name="category" value="{{$gameUpdateList['category_id']}}"><br>
          
             <button type="submit">Update</button>
