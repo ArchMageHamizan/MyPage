@@ -139,6 +139,7 @@ Route::post("addComplain",[AboutController::class,'addComplain']);
 Route::get("game",[GameController::class,'displayList']);
 Route::get("delete/{id}",[GameController::class,'deleteData']);
 Route::get("updateGame/{id}",[GameController::class,'showData']);
+Route::post("updateGame",[GameController::class,'updateData']);// does not need id in url anymore
 //=======================================================
 
 //  View  and Controller file for : addgame.php ============
