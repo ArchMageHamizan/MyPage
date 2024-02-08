@@ -23,12 +23,14 @@ class GameController extends Controller
     //=========================================================================
 
     //update technique ========================================================
-    function showData($id){ //fetch data from table and display at form
+    //1. fetch data from table and display at form
+    function showData($id){ 
         $data=Game::find($id); //find column named 'id'
         return view('updateGame',['gameUpdateList'=>$data]);
     }
-//     function updateData($id){ //enable the fetched data being edit.
+   //2. Any changes made at form , changes the data from table as well  
+    function updateData(Request $req){ //enable the fetched data being edit.
 //         return Game::find($id); //find column named 'id'
-//    }
+   }
     //==========================================================================     
 }
