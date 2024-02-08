@@ -25,7 +25,7 @@
             <!-- <h1>Ban List</h1> -->
             <div class="container">
                     <table>
-                        <thead>
+                        <thead>    
                             <tr>                     
                                 <th><div>NUM</div></th>
                                 <th><div>ID</div></th>
