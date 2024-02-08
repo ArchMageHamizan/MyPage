@@ -48,7 +48,7 @@
                                 <td data-title="ACTION">
                                     <div>
                                         <a href="{{'delete/'.$game['id']}}">Delete</a>
-                                        <a href="{{'update/'.$game['id']}}">Update</a>
+                                        <a href="{{'updateGame/'.$game['id']}}">Update</a>
                                     </div>                                    
                                 </td>
                             
