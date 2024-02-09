@@ -8,7 +8,9 @@ use Illuminate\Support\Facades\DB; //using DB class
 class AccessoriesController extends Controller
 {
     function dbNoModel(){
-        return DB::table('accessories')->get();//fetch accessories table using table function from DB class;
+        $data=DB::table('accessories')->get();//fetch accessories table using table function from DB class;
                                                // must include get function also.
+
+        return view('accessories',['accList'=>$data]);
     }
 }

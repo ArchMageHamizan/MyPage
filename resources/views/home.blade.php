@@ -12,7 +12,8 @@
     <li><a href="/users">Data</a></li>
     <li><a href="/ban">Banlist</a></li>
     <li><a href="/game">List Game</a></li>
-    <li><a href="/addGame">Add Your Game</a></li>
+    <li><a href="/accessories">Accessories</a></li>
+
 
 </ol>
 <!-- <form action="{{URL::to('/donate')}}" method="post">
