@@ -14,7 +14,7 @@
     button,a,span {
         margin:5px;
     }
-    </style>
+    
     <body>
      
          <form action="/updateGame"  method="POST">
