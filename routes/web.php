@@ -11,7 +11,7 @@ use App\Http\Controllers\BanController;// import laravel controller from the dir
 use App\Http\Controllers\AboutController;// import laravel controller from the directory file
 use App\Http\Controllers\GameController;// import laravel controller from the directory file
 use App\Http\Controllers\AddGameController;// import laravel controller from the directory file
-use App\Http\Controllers\Acc
+use App\Http\Controllers\AccessoriesController;//import laravel controller from the direction file & connect with database without model
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -147,3 +147,7 @@ Route::post("updateGame",[GameController::class,'updateData']);// does not need 
 Route::view('addGame','addgame');
 Route::post('addGame',[AddGameController::class,'addGame']);
 // ==========================================================
+
+//  Controller file for : AccessoriesController.php ============
+Route::get('accessories',[AccessoriesController::class,'dbNoModel']);
+// =============================================================
