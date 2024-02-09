@@ -27,6 +27,6 @@
          
             <button type="submit">Update</button>
          </form>
-         <a href='/home'>home
+         <a href='/home'>home</a>
     </body>
 </html>
